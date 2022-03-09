@@ -58,7 +58,9 @@ colorscheme srcery
 ## Support
 
 Additional plugins support. 
+
 All from [srcery-vim](https://github.com/srcery-colors/srcery-vim)
+
 Others:
 * [nvim-treesitter (java)](https://github.com/nvim-treesitter/nvim-treesitter)
 * [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
