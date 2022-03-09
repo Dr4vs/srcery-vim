@@ -824,17 +824,34 @@ hi! link NERDTreeClosable SrceryBlue
 hi! link NERDTreeFile SrceryWhite
 hi! link NERDTreeExecFile SrceryYellow
 hi! link NERDTreeUp SrceryOrange
-hi! link NERDTreeCWD SrceryGreen
+hi! link NERDTreeCWD SrceryBrightBlue
 hi! link NERDTreeHelp SrceryCyan
 hi! link NERDTreeFlags SrceryCyan
 hi! link NERDTreeLinkFile SrceryBrightBlack
 hi! link NERDTreeLinkTarget SrceryBrightBlack
 
+" nvim-tree: "{{{
+
+hi! link NvimTreeSymlink SrceryBrightBlack
+hi! link NvimTreeFolderName SrceryWhite
+hi! link NvimTreeRootFolder SrceryBrightBlack
+hi! link NvimTreeEmptyFolderName SrceryWhite
+hi! link NvimTreeOpenedFolderName SrceryYellow
+hi! link NvimTreeExecFile SrceryWhite 
+hi! link NvimTreeOpenedFile SrceryWhite
+hi! link NvimTreeSpecialFile SrceryWhite
+hi! link NvimTreeImageFile SrceryWhite
+hi! link NvimTreeIndentMarker SrceryWhite
+hi! link LspDiagnosticsError SrceryRed
+hi! link LspDiagnosticsWarning SrceryOrange
+hi! link LspDiagnosticsInformation SrceryYellow
+hi! link LspDiagnosticsHint SrceryYellow
+
 " }}}
 " Telescope: "{{{
 
 call s:HL('TelescopeNormal', s:white, s:none)
-call s:HL('TelescopeSelection', s:green, s:none, s:bold)
+call s:HL('TelescopeSelection', s:yellow, s:xgray1, s:bold)
 call s:HL('TelescopeMatching', s:magenta)
 call s:HL('TelescopeSelectionCaret', s:magenta)
 call s:HL('TelescopePromptPrefix', s:bright_yellow)
@@ -866,6 +883,20 @@ highlight! link TSURI SrceryGreen
 highlight! link TSVariable SrceryBrightWhite
 " }}}
 
+" Dashboard
+hi! link DashboardShortCut SrceryBrightWhite
+hi! link DashboardHeader SrceryBrightWhite
+hi! link DashboardCenter SrceryBrightWhite
+hi! link DashboardFooter SrceryBrightWhite
+
+" WhichKey
+hi! link WhichKey SrceryBrightRed
+hi! link WhichKeyGroup SrceryYellow
+hi! link WhichKeyDesc SrceryBrightWhite
+hi! link WhichKeySeperator SrceryBrightWhite
+hi! link WhichKeySeparator SrceryBrightWhite
+hi! link WhichKeyFloat SrceryBrightWhite
+hi! link WhichKeyValue SrceryBrightWhite
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
@@ -1149,18 +1180,31 @@ hi! link moonObject SrceryYellow
 " }}}
 " Java: {{{
 
-hi! link javaAnnotation SrceryBlue
-hi! link javaDocTags SrceryCyan
-hi! link javaCommentTitle vimCommentTitle
-hi! link javaParen SrceryBrightWhite
-hi! link javaParen1 SrceryBrightWhite
-hi! link javaParen2 SrceryBrightWhite
-hi! link javaParen3 SrceryBrightWhite
-hi! link javaParen4 SrceryBrightWhite
-hi! link javaParen5 SrceryBrightWhite
-hi! link javaOperator SrceryYellow
+hi! link javaTSKeyword SrceryRed
+hi! link javaTSInclude SrceryRed
+hi! link javaTSOperator SrceryBrightMagenta
+hi! link javaTSVariable SrceryBrightWhite
+hi! link javaTSType SrceryBrightYellow
+hi! link javaTSField SrceryYellow
+hi! link javaTSMethod SrceryBrightBlue
+hi! link javaTSAttribute SrceryBrightMagenta
+hi! link javaTSString SrceryBrightGreen
+hi! link javaTSParameter SrceryBrightWhite
+hi! link javaTSTypeBuiltin SrceryRed
+hi! link javaTSVariableBuiltin SrceryRed
 
-hi! link javaVarArg SrceryGreen
+"hi! link javaExternal SrceryRed
+"hi! link javaAnnotation SrceryMagenta
+"hi! link javaDocTags SrceryMagenta
+"hi! link javaCommentTitle vimCommentTitle
+"hi! link javaParen SrceryBrightWhite
+"hi! link javaParen1 SrceryBrightWhite
+"hi! link javaParen2 SrceryBrightWhite
+"hi! link javaParen3 SrceryBrightWhite
+"hi! link javaParen4 SrceryBrightWhite
+"hi! link javaParen5 SrceryBrightWhite
+"hi! link javaOperator SrceryYellow
+"hi! link javaVarArg SrceryGreen
 
 " }}}
 " Elixir: {{{
